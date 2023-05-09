@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de control - Admin</title>
+
+    <!-- Material CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+      <!-- Stylesheet -->
+      <link rel="stylesheet" href="./assets/styles.css">
+      <link rel="shortcut icon" href="./assets/images/logo.png" type="image">
+      <script src="./script/script.js" defer></script>
+
+      
+      
+</head>
+<body>
+
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./assets/images/logo.png">
+                    <h2>SHI<span class="danger">NE</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">cancel</span>
+
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Painel de controle</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Clientes</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>Pedidos</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Análise</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Mensagens</h3>
+                    <span class="message-count">26</span>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Produtos</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">report_gmailerrorred</span>
+                    <h3>Relatórios</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Configurações</h3>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add produto</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Sair</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- ################### FIM DA BARRA LATERAL ############-->
+
+        <main>
+            <h1>Painel de controle</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Vendas totais</h3>
+                            <h1>R$29,032</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>87%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">últimas 24 horas</small>
+                </div>
+                <!-- ########## FIM DAS VENDAS ########-->
+                <div class="expenses">
+                    <span class="material-icons-sharp">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Custo total</h3>
+                            <h1>R$14,160</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>68%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">últimas 24 horas</small>
+                </div>
+                <!-- ########## FIM DAS DESPESAS ########-->
+                <div class="income">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Renda total</h3>
+                            <h1>R$14.872</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>49%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">últimas 24 horas</small>
+                </div>
+                <!-- ########## FIM DA RENDA ########-->
+            </div>
+            <!-- ######## FIM DOS INSIGHTS #########-->
+            <div class="recent-orders">
+                <h2>Pedidos recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do produto</th>
+                            <th>Número do produto</th>
+                            <th>Pagamentos</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mini drone dobrável</td>
+                            <td>85631</td>
+                            <td>Vencido</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Carrinho de brinquedo infatil</td>
+                            <td>61191</td>
+                            <td>Pago</td>
+                            <td class="payment">Rota de entrega</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Lanterna de acampamento</td>
+                            <td>27295</td>
+                            <td>Reembolso</td>
+                            <td class="cancel">Cancelado</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>8 Canecas de Choppe 360ml</td>
+                            <td>26721</td>
+                            <td>Pago</td>
+                            <td class="payment">Entregue</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>  <tr>
+                            <td>Carregador de celular USB</td>
+                            <td>39671</td>
+                            <td>Vencido</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Espelho para maquiagem</td>
+                            <td>74916</td>
+                            <td>Pago</td>
+                            <td class="payment">Entregue</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Calçado masculino 39</td>
+                            <td>86492</td>
+                            <td>Pago</td>
+                            <td class="payment">Rota de entrega</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>5 Par de meias masculinas</td>
+                            <td>16342</td>
+                            <td>Pago</td>
+                            <td class="payment">Rota de entrega</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Talheres de luxo</td>
+                            <td>65381</td>
+                            <td>Reembolso</td>
+                            <td class="cancel">Cancelado</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Mostra tudo</a>
+            </div>
+        </main>
+        <!--########## Fim da main #######-->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá,<b> Lucas</b></p>
+                    </div>
+                    <small class="text-muted">Admin</small>
+                    
+                </div>
+                <div class="profile-photo">
+                    <a href="#"><img src="./assets/images/profile-1.jpg"></a>
+                </div>
+            </div>
+        
+        <!--###### Fim do topo #####-->
+        <div class="recent-updates">
+            <h2>Atualizações recentes</h2>
+            <div class="updates">
+                <div class="update">
+                    <div class="profile-photo">
+                        <img src="./assets/images/profile-2.jpg">
+                    </div>
+                    <div class="message">
+                        <p><b>Miguel Santos</b> Recebeu seu pedido drone GPS de tecnologia Night Lion</p>
+                        <small class="text-muted"> 2 Minutos atrás</small>
+                    </div>
+                </div>
+                <div class="update">
+                    <div class="profile-photo">
+                        <img src="./assets/images/profile-3.jpg">
+                    </div>
+                    <div class="message">
+                        <p><b>Angela Silva</b> Pediu o reembolso da Laterna de acampamento</p>
+                        <small class="text-muted"> 16 Horas atrás</small>
+                    </div>
+                </div>
+                <div class="update">
+                    <div class="profile-photo">
+                        <img src="./assets/images/profile-4.jpg">
+                    </div>
+                    <div class="message">
+                        <p><b>Patricia Valmeria</b> Recebeu seu pedido Espelho de maquiagem</p>
+                        <small class="text-muted"> 10 Dias atrás</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ##### FIM DAS ATUALIZAÇÕES RECENTES ####-->
+        <div class="sales-analytics">
+            <h2>Análise de vendas</h2>
+            <div class="item online">
+                <div class="icon">
+                <span class="material-icons-sharp">shopping_cart</span>
+            </div>
+             <div class="right">
+                <div class="info">
+                    <h3>PEDIDOS ONLINE</h3>
+                    <small class="text-muted">últimas 24 horas</small>
+                </div>
+                <h5 class="success">+39%</h5>
+                <h3>3948</h3>
+              </div>
+             </div>
+             <div class="item offline">
+                <div class="icon">
+                <span class="material-icons-sharp">local_mall</span>
+            </div>
+             <div class="right">
+                <div class="info">
+                    <h3>PEDIDOS OFFLINE</h3>
+                    <small class="text-muted">últimas 24 horas</small>
+                </div>
+                <h5 class="cancel">-17%</h5>
+                <h3>1100</h3>
+              </div>
+             </div>
+             <div class="item customers">
+                <div class="icon">
+                <span class="material-icons-sharp">person</span>
+            </div>
+             <div class="right">
+                <div class="info">
+                    <h3>NOVOS CLIENTES</h3>
+                    <small class="text-muted">últimas 24 horas</small>
+                </div>
+                <h5 class="success">+25%</h5>
+                <h3>849</h3>
+               </div>
+             </div>
+
+             <div class="item add-product">
+                <div>
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Adicionar produto</h3>
+                </div>
+             </div>
+        </div>
+    </div> 
+</div>
+</body>
+</html>
